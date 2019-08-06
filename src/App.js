@@ -28,7 +28,7 @@ class App extends React.Component {
   render(){
     return (
       <React.Fragment>
-        <Nav></Nav>
+        <Nav><h1>Trial</h1></Nav>
         <Link to="/Admin">Admin Side</Link>
         <Route path="/" exact component={Home}></Route>
         <Route path="/Cart" render={()=><Cart AddInfo={this.AddInfo.bind(this)} s={this.state.productName}></Cart>}></Route>
